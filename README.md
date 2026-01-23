@@ -108,13 +108,15 @@ The enterprise version evolved into an npm package with CLI tools, automated com
 
 ## Need More?
 
-**For Teams & Enterprise:** Check out [@scainet-enterprise/agent-excellence](https://github.com/scainet-enterprise/Chazwazza) - the full framework with:
+**For Teams & Enterprise:** The [Agent Excellence Framework](https://scainet.io/framework) is the enterprise version with:
 - npm package with CLI tools
 - GitHub Actions for automated compliance
-- Dashboard integration
+- Real-time dashboard integration
 - Cross-repo learning synchronization
 - HUMAN Protocol (semantic command layer)
 - MDC metadata format for AI agents
+
+👉 **[Learn more at scainet.io/framework](https://scainet.io/framework)**
 
 **Services:** [SCAINET](https://scainet.io/services) offers AI-assisted development services using these frameworks.
 
