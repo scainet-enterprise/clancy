@@ -1,244 +1,426 @@
 # Clancy Prompts 🗣️
 
-**Simple phrases that guide AI coding assistants**
+**Quick phrases that activate AI protection**
 
-These prompts leverage the Clancy framework without requiring you to memorize rules or sections. Just say them naturally - any modern AI coding assistant (Cursor, Copilot, Claude, etc.) will understand.
+> These prompts work with any AI coding assistant. Say them naturally—the AI understands.
 
 ---
 
 ## 🚀 Session Management
 
-### Starting Fresh
+### Starting a Session
+
 ```
-"Read CLANCY.md before we begin"
+"Read CLANCY.md before we start"
 ```
 *Loads the framework into context*
 
 ```
-"I'm working on [project]. What should you know first?"
+"I'm working on [project]. Follow CLANCY.md rules."
 ```
-*AI will ask for relevant files and context*
-
-### Ending a Session
-```
-"Write a handover for the next agent"
-```
-*Creates structured summary of work done and remaining tasks*
+*Context + protection in one phrase*
 
 ```
-"What would you tell the next developer about this session?"
+"What should you know before we start coding?"
 ```
-*Quick summary of decisions made and why*
+*Prompts AI to ask for context and rules*
 
 ---
 
-## 🛡️ Safety Prompts
-
-### Before Making Changes
-```
-"What could break if we do this?"
-```
-*Forces consideration of side effects before action*
+### Ending a Session
 
 ```
-"Show me what you're about to change before you change it"
+"Write a handover for the next session"
 ```
-*Preview changes without applying them*
-
-### Preventing Feature Removal
-```
-"Whatever you do, don't remove any existing features"
-```
-*Activates Rule 1 protection*
+*Creates structured summary for continuity*
 
 ```
-"This feature must keep working: [describe feature]"
+"Summarize what we did and what's left"
 ```
-*Explicit protection for specific functionality*
+*Quick state capture*
 
-### After Making Changes
 ```
-"Did anything else break when you made that change?"
+"What would the next developer need to know?"
 ```
-*Triggers cross-impact verification*
+*Ensures knowledge transfer*
+
+---
+
+## 🛡️ The Protection Prompts
+
+### Rule 1: The Deletion Rule
+
+```
+"Don't remove any existing functionality"
+```
+*Activates deletion protection*
+
+```
+"Whatever you do, preserve [specific feature]"
+```
+*Explicit protection for critical features*
+
+```
+"If you need to remove something, ask me first"
+```
+*Ensures approval before deletion*
+
+---
+
+### Rule 2: Show Your Work
+
+```
+"Show me proof this works"
+```
+*Demands verification evidence*
+
+```
+"Don't just say it works—verify it"
+```
+*Rejects unverified claims*
+
+```
+"What evidence do you have that this is working?"
+```
+*Prompts for specific proof*
+
+---
+
+### Rule 3: Watch the Build
+
+```
+"Watch the build output and tell me if anything fails"
+```
+*Ensures monitoring*
+
+```
+"Run this and read me the full output"
+```
+*Forces attention to results*
+
+```
+"Don't assume success—check the output"
+```
+*Prevents silent failures*
+
+---
+
+### Rule 4: No Skipping
+
+```
+"Complete the full checklist before we move on"
+```
+*Enforces thoroughness*
+
+```
+"What verification steps haven't we done yet?"
+```
+*Identifies gaps*
+
+---
+
+### Rule 5: Fix It Right
+
+```
+"Find the root cause, not just a workaround"
+```
+*Prevents band-aid fixes*
+
+```
+"What's the proper fix, not the quick fix?"
+```
+*Elevates solution quality*
+
+```
+"If this is a workaround, tell me why the real fix is blocked"
+```
+*Requires justification for shortcuts*
+
+---
+
+### Rule 6: Trust But Verify
+
+```
+"Is this library actively maintained?"
+```
+*Validates technology choices*
+
+```
+"When was this last updated?"
+```
+*Checks for staleness*
+
+```
+"Is there something already in the codebase that does this?"
+```
+*Prevents duplication*
+
+---
+
+### Rule 7: Check Every Screen
+
+```
+"Does this work on mobile?"
+```
+*Triggers responsive check*
+
+```
+"Show me how this looks at 375px width"
+```
+*Specific viewport verification*
+
+```
+"Check dark mode too"
+```
+*Ensures theme compatibility*
+
+---
+
+### Rule 8: Secrets Stay Secret
+
+```
+"Make sure no secrets are exposed"
+```
+*Activates credential vigilance*
+
+```
+"Use environment variables for that"
+```
+*Redirects hardcoded values*
+
+---
+
+### Rule 9: Test Before You Tell
+
+```
+"Verify this works before asking me to test"
+```
+*Sets verification expectation*
+
+```
+"Have you confirmed the build passes?"
+```
+*Checks self-verification*
+
+---
+
+### Rule 10: One Fix at a Time
+
+```
+"Try one thing, verify it, then move to the next"
+```
+*Enforces methodical approach*
+
+```
+"Revert that and try a different approach"
+```
+*Prevents layered fixes*
+
+```
+"What ONE change will test your hypothesis?"
+```
+*Forces minimal changes*
 
 ---
 
 ## 🔍 Investigation Prompts
 
 ### Debugging
-```
-"Don't fix anything yet. Just investigate and tell me what you find."
-```
-*Investigation-First Protocol - prevents premature "fixes"*
 
 ```
-"What's the root cause, not just the symptom?"
+"Don't fix anything yet. Just investigate."
 ```
-*Prevents workarounds (Rule 5)*
+*The Investigation-First Protocol*
+
+```
+"What do the logs say?"
+```
+*Directs to evidence*
+
+```
+"What changed since this last worked?"
+```
+*Activates "It Worked Before" heuristic*
+
+```
+"What's your hypothesis? How can we test it?"
+```
+*Structures debugging*
 
 ```
 "Walk me through what happens when [action]"
 ```
-*Traces execution flow to understand behavior*
+*Traces execution flow*
+
+---
 
 ### Understanding Code
-```
-"Explain this code like I wrote it yesterday and forgot"
-```
-*Clear explanation of existing code*
 
 ```
-"What is this actually doing vs what it looks like it's doing?"
+"Explain this like I wrote it and forgot"
 ```
-*Catches misleading variable names or hidden complexity*
+*Clear explanation*
+
+```
+"What is this actually doing vs what it looks like?"
+```
+*Catches hidden complexity*
+
+```
+"What could go wrong here?"
+```
+*Risk identification*
 
 ---
 
 ## ✅ Verification Prompts
 
-### Quality Check
-```
-"Before you call this done, verify it actually works"
-```
-*Triggers Rule 2 - no claiming success without evidence*
+### Before Merging
 
-```
-"Show me proof this works"
-```
-*Explicit request for verification evidence*
-
-### Build & Deploy
-```
-"Watch the output and tell me if anything fails"
-```
-*Activates Rule 3 - monitor all operations*
-
-```
-"Run the tests and interpret the results"
-```
-*Full test verification, not just "tests pass"*
-
----
-
-## 🏗️ Architecture Prompts
-
-### Before New Code
-```
-"Does this pattern already exist in the codebase?"
-```
-*Prevents duplicate implementations*
-
-```
-"What's the standard way to do [X] in this project?"
-```
-*Follows existing conventions*
-
-### Technology Decisions
-```
-"Is this library/framework still maintained?"
-```
-*Rule 6 - validate technology choices*
-
-```
-"What's the simplest solution that actually works?"
-```
-*Prevents over-engineering*
-
----
-
-## 📋 Checklist Prompts
-
-### General
 ```
 "What should I check before merging this?"
 ```
-*Generates relevant checklist for the change type*
+*Generates relevant checklist*
+
+```
+"What could break from this change?"
+```
+*Impact assessment*
+
+```
+"Are there any edge cases we haven't handled?"
+```
+*Completeness check*
+
+---
 
 ### Specific Scenarios
+
 ```
 "UI change checklist"
 ```
-- Works on mobile?
-- Accessible?
-- Dark/light mode?
-- Loading states?
-- Error states?
+*Prompts: Mobile? Accessible? Loading states? Error states?*
 
 ```
 "API change checklist"
 ```
-- Backwards compatible?
-- Error handling?
-- Auth checked?
-- Rate limiting?
+*Prompts: Backwards compatible? Error handling? Auth?*
 
 ```
 "Database change checklist"
 ```
-- Migration needed?
-- Indexes correct?
-- Rollback possible?
+*Prompts: Migration needed? Indexes? Rollback plan?*
 
 ---
 
-## 💡 Pro Tips
+## 💡 Power Phrases
 
-### Combine Prompts
+### Combining Prompts
+
 ```
 "Don't remove any features, but refactor [X] to use [Y]"
 ```
+*Protection + instruction*
 
-### Be Explicit About Risk Tolerance
 ```
-"This is production code, be extra careful"
-"This is a prototype, move fast"
+"Fix this but verify it works before telling me"
 ```
+*Task + verification*
+
+```
+"Investigate first, then propose solutions"
+```
+*Sequence enforcement*
+
+---
+
+### Setting Context
+
+```
+"This is production code—be extra careful"
+```
+*Raises caution level*
+
+```
+"This is a prototype—move fast"
+```
+*Adjusts for speed*
+
+```
+"We're in debugging mode—investigate everything, fix nothing without asking"
+```
+*Session-wide behavior change*
+
+---
 
 ### When AI Gets Stuck
+
 ```
 "Start from first principles. What are we actually trying to achieve?"
 ```
+*Resets thinking*
+
+```
+"What's the simplest thing that could possibly work?"
+```
+*Reduces complexity*
+
+```
+"Let's step back. What do we know for certain?"
+```
+*Grounds in facts*
+
+---
 
 ### When AI Makes Mistakes
+
 ```
-"Undo that. Let's think through this more carefully."
+"Undo that. Let's think more carefully."
 ```
+*Reset and retry*
+
+```
+"That removed functionality. Revert and try again."
+```
+*Explicit Rule 1 correction*
+
+```
+"That's a workaround. What's the real fix?"
+```
+*Rule 5 correction*
 
 ---
 
-## 🔮 Context-Setting Phrases
-
-These establish ongoing behavior, not just single actions:
-
-```
-"From now on, always show me changes before applying them"
-```
-
-```
-"For this session, assume I want thorough explanations"
-```
-
-```
-"We're in debugging mode - investigate everything, fix nothing without asking"
-```
-
----
-
-## Quick Reference Card
+## 📋 Quick Reference
 
 | Situation | Prompt |
 |-----------|--------|
-| Start | "Read CLANCY.md first" |
-| Investigate | "Don't fix, just investigate" |
-| Before change | "What could break?" |
-| Verify | "Show me proof this works" |
-| Protect feature | "Don't remove [X]" |
-| End session | "Write a handover" |
+| **Start** | "Read CLANCY.md first" |
+| **Protect** | "Don't remove any features" |
+| **Investigate** | "Don't fix yet, just investigate" |
+| **Verify** | "Show me proof this works" |
+| **Debug** | "What changed since it worked?" |
+| **Quality** | "What's the proper fix, not the quick fix?" |
+| **Check** | "Does this work on mobile?" |
+| **End** | "Write a handover" |
+
+---
+
+## 🎯 The Golden Phrases
+
+If you remember nothing else, remember these:
+
+1. **"Read CLANCY.md first"** — Session start
+2. **"Don't remove any features"** — Protection
+3. **"Don't fix yet, just investigate"** — Debugging
+4. **"Show me proof it works"** — Verification
+5. **"What changed since it worked?"** — The power heuristic
+
+These five phrases prevent 80% of AI coding mistakes.
 
 ---
 
 <p align="center">
   <em>Part of the <a href="https://github.com/scainet-enterprise/clancy">Clancy Framework</a></em><br>
-  More at <a href="https://scainet.io/clancy">scainet.io/clancy</a>
+  🛡️ Protected by Clancy v4.0
 </p>
