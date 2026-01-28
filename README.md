@@ -1,143 +1,297 @@
-# Clancy.md 🤖
+# Clancy 🛡️
 
-**The AI Coding Framework for Solo Developers**
+**The AI Coding Guardian**
 
-> One Markdown file. Immediate impact. Transform how AI agents work with your code.
+> One file. 10 rules. Protect your code from AI mistakes.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Framework](https://img.shields.io/badge/AI%20Framework-v3.6-blue.svg)](https://scainet.io/clancy)
+[![Version](https://img.shields.io/badge/version-4.0-blue.svg)](CLANCY.md)
+[![Works With](https://img.shields.io/badge/works%20with-Cursor%20%7C%20VS%20Code%20%7C%20Claude%20%7C%20Copilot-green.svg)](#tool-setup)
 
 ---
 
-## What is Clancy?
+## The Problem
 
-Clancy is a battle-tested framework for AI-assisted development. Drop one file into your project and watch your AI coding assistant become significantly more reliable, careful, and effective.
+AI coding assistants are powerful but make predictable mistakes:
+- **Remove features** while "fixing" bugs
+- **Claim success** without verification
+- **Implement workarounds** instead of real fixes
+- **Lose context** between sessions
 
-**The Core Insight:** AI coding agents fail in predictable ways. Clancy prevents them.
+These mistakes cost developers hours. Every week.
+
+## The Solution
+
+**Clancy** is a battle-tested framework that prevents these failures. Drop one file into your project, tell your AI to read it, and watch the quality of AI assistance transform.
+
+---
 
 ## Quick Start (30 Seconds)
 
+### 1. Get the file
+
 ```bash
-# Option 1: curl
-curl -o CLANCY.md https://raw.githubusercontent.com/scainet-enterprise/clancy/main/CLANCY.md
-
-# Option 2: Just copy CLANCY.md to your project root
+curl -O https://raw.githubusercontent.com/scainet-enterprise/clancy/main/CLANCY.md
 ```
 
-Then tell your AI agent:
-> "Read CLANCY.md before we begin"
+Or just copy [CLANCY.md](CLANCY.md) to your project root.
 
-That's it. You're protected.
+### 2. Tell your AI
+
+> "Read CLANCY.md before we start working."
+
+### 3. You're protected
+
+The AI now follows 10 rules that prevent the most common failures.
 
 ---
 
-## What Problems Does Clancy Solve?
+## The 10 Rules
 
-| Problem | Without Clancy | With Clancy |
-|---------|----------------|-------------|
-| **AI removes features while "fixing" bugs** | Discovers after deployment 💥 | Rule 1 prevents this automatically |
-| **AI claims "it works" without testing** | Manual verification every time | Rule 2 enforces verification |
-| **AI uses workarounds that hide root causes** | Technical debt accumulates | Rule 5 forces proper fixes |
-| **AI changes break related features** | Regression bugs | Checklist catches them |
-| **Handoffs between AI sessions lose context** | Re-explain everything | Structured handover patterns |
+| # | Name | What It Prevents |
+|---|------|------------------|
+| 1 | **The Deletion Rule** | AI removing features to "fix" bugs |
+| 2 | **Show Your Work** | Unverified "it should work now" claims |
+| 3 | **Watch the Build** | Silent deployment failures |
+| 4 | **No Skipping** | Missed verification steps |
+| 5 | **Fix It Right** | Workarounds that become tech debt |
+| 6 | **Trust But Verify** | Deprecated/nonexistent dependencies |
+| 7 | **Check Every Screen** | Broken mobile experiences |
+| 8 | **Secrets Stay Secret** | Leaked API keys and credentials |
+| 9 | **Test Before You Tell** | Wasted time testing broken builds |
+| 10 | **One Fix at a Time** | Layered fixes that become unmaintainable |
 
-## The Non-Negotiable Rules
-
-1. **Never Remove Functionality** - AI cannot delete features to "fix" or "improve" code
-2. **Verify Before Claiming Success** - No "should work now" - must confirm with evidence
-3. **Monitor All Operations** - Watch build/deploy output for failures
-4. **Complete All Checklists** - Every change has a verification checklist
-5. **No Workarounds** - A workaround is a symptom of an undiagnosed root cause
-6. **Validate Technology Choices** - Verify frameworks/libraries exist and are current
-
-## What's Included
-
-| File | Purpose |
-|------|---------|
-| `CLANCY.md` | The framework (~2,000 lines of battle-tested wisdom) |
-| `CLANCY_PROMPTS.md` | Simple phrases that guide AI behavior |
-| `INCIDENT_REPORT_EXAMPLE.md` | Real case study showing why Rule 1 exists |
-| `QUICK_START.md` | 5-minute setup guide |
+Each rule exists because someone learned it the hard way. [Read the full guide →](CLANCY.md)
 
 ---
 
-## Clancy Prompts
+## Tool Setup
 
-Simple phrases you can say to your AI that trigger framework behaviors:
+Clancy works with any AI coding assistant. Here's how to get the best results:
 
-### Starting Work
-```
-"Hey, I'm working on [project]. Read CLANCY.md first."
+### Cursor (Recommended)
+
+**Option A: Project Rules**
+1. Copy `CLANCY.md` to your project root
+2. The AI will see it in context automatically
+
+**Option B: System-Wide**
+1. Open Settings → Features → Rules for AI
+2. Add: "Always read and follow CLANCY.md when present in a project"
+
+**Recommended Settings:**
+- ✅ Enable terminal command execution
+- ✅ Allow file creation and modification
+- ✅ Enable codebase indexing
+- ✅ Allow running build commands
+
+*For maximum effectiveness, ensure Cursor has the permissions to actually verify builds and run tests.*
+
+---
+
+### VS Code + Continue
+
+1. Copy `CLANCY.md` to your project root
+2. In Continue settings, add to system prompt:
+   ```
+   When working on code, follow the rules in CLANCY.md if present.
+   ```
+
+**Recommended Extensions:**
+- Continue (AI assistant)
+- GitLens (for change tracking)
+
+---
+
+### Claude (Direct / Claude.ai)
+
+**For Projects:**
+1. Create a Project in Claude
+2. Add `CLANCY.md` to the project knowledge
+3. Start conversations within the project
+
+**For Quick Sessions:**
+1. Copy-paste the [Quick Reference Card](CLANCY.md#quick-reference-card)
+2. Or tell Claude: "I'll share my coding standards first" and paste CLANCY.md
+
+---
+
+### GitHub Copilot Chat
+
+1. Copy `CLANCY.md` to your project root
+2. Reference it explicitly: "@workspace explain CLANCY.md"
+3. In conversations: "Following CLANCY.md rules, help me..."
+
+---
+
+### Windsurf
+
+1. Copy `CLANCY.md` to your project root  
+2. Windsurf will index it automatically
+3. Reference it: "According to CLANCY.md..."
+
+---
+
+### Aider (CLI)
+
+```bash
+# Add CLANCY.md to chat context
+aider --read CLANCY.md your_files.py
+
+# Or in session
+/read CLANCY.md
 ```
 
-### Before Changes
-```
-"What could break if we do this?"
-```
+---
 
-### Debugging
-```
-"Don't fix anything yet. Just investigate and tell me what you find."
-```
+### Other Tools
 
-### Quality Check
-```
-"Before you call this done, verify it actually works."
-```
+The pattern works with any AI that can read files:
+1. Get CLANCY.md into the AI's context
+2. Tell it to follow the rules
+3. Watch the quality improve
 
-### Ending Session
-```
-"Summarize what we did so the next agent can continue."
-```
+---
+
+## Permission Recommendations
+
+### For Solo Developers / Trusted Environments
+
+Give the AI **full permissions**. Clancy's verification rules only work if the AI can actually:
+- Run builds
+- Execute tests
+- Check command output
+- Verify deployments
+
+**Why?** An AI with read-only access can follow "don't remove features" but can't follow "verify the build passes."
+
+### For Teams / Shared Environments
+
+Balance permissions with your security needs:
+- ✅ Read all files
+- ✅ Write to actively edited files
+- ⚠️ Terminal access (case-by-case)
+- ❌ Full system access
+
+### Minimum Viable Permissions
+
+If you can't grant full access, ensure the AI can at least:
+- Read all project files
+- Write to files you're editing
+- See terminal output (even without execute)
+
+> **The 80/20:** Most of Clancy's value comes from the rules themselves. Full permissions just let the AI verify instead of asking you to verify.
+
+---
+
+## The Prompts
+
+Quick phrases that activate Clancy behaviors:
+
+| Situation | Say This |
+|-----------|----------|
+| **Start session** | "Read CLANCY.md first" |
+| **Protect feature** | "Don't remove any existing functionality" |
+| **Debug carefully** | "Don't fix yet, just investigate" |
+| **Verify work** | "Show me proof this works" |
+| **End session** | "Write a handover for the next session" |
+| **When concerned** | "What could break if we do this?" |
 
 See [CLANCY_PROMPTS.md](CLANCY_PROMPTS.md) for the complete list.
 
 ---
 
-## Why "Clancy"?
+## What's Included
 
-Named after a beloved character known for simple wisdom and doing the right thing when it matters. Clancy keeps things straightforward - one file, clear rules, immediate impact.
-
-## Origin Story
-
-Clancy was extracted from the [Agent Excellence Framework](https://scainet.io/framework) developed by SCAINET. After building 9+ AI-powered products with a solo founder + AI team, patterns emerged about how AI agents fail - and how to prevent those failures.
-
-The enterprise version evolved into an npm package with CLI tools, automated compliance checking, and dashboard integration. But the core wisdom? That's Clancy.
+| File | For | Purpose |
+|------|-----|---------|
+| [CLANCY.md](CLANCY.md) | AI Agents | The 10 rules, heuristics, checklists |
+| [README.md](README.md) | Humans | Setup guide, tool configuration |
+| [CLANCY_PROMPTS.md](CLANCY_PROMPTS.md) | Humans | Quick phrases for common situations |
 
 ---
 
-## Need More?
+## Works Even Better with Forge
 
-**For Teams & Enterprise:** The [Agent Excellence Framework](https://scainet.io/framework) is the enterprise version with:
-- npm package with CLI tools
-- GitHub Actions for automated compliance
-- Real-time dashboard integration
-- Cross-repo learning synchronization
-- HUMAN Protocol (semantic command layer)
-- MDC metadata format for AI agents
+**Clancy** is the knowledge—rules that any AI can follow.
 
-👉 **[Learn more at scainet.io/framework](https://scainet.io/framework)**
+**[Forge](https://scainet.io/forge)** is the enforcement—rules that are always active.
 
-**Services:** [SCAINET](https://scainet.io/services) offers AI-assisted development services using these frameworks.
+| | Clancy | Forge Light | Forge Pro |
+|-|--------|-------------|-----------|
+| **Price** | Free | Free | Paid |
+| **Rules** | Manual load | System-level | System-level |
+| **Engine** | Clancy.md | Clancy.md | Chazwazza |
+| **Features** | 10 rules | Auto-enforcement | Enterprise |
+
+*Forge Light launches with Clancy.md embedded at the system level. No more "read CLANCY.md first"—it's always on.*
+
+[Join the Forge waitlist →](https://scainet.io/forge)
+
+---
+
+## Need Enterprise Features?
+
+**[Chazwazza](https://scainet.io/framework)** is Clancy's big sibling:
+
+- 📦 **npm package** with CLI tools
+- 🔄 **Cross-repo sync** for teams
+- 📊 **Dashboard** for visibility
+- 🎯 **Modules** for platform-specific rules
+- 🤖 **HUMAN Protocol** for natural language commands
+- 📈 **Learning flow** that improves over time
+
+Clancy is the free foundation. Chazwazza is the enterprise evolution.
+
+[Learn more →](https://scainet.io/framework)
+
+---
+
+## Why "Clancy"?
+
+Named after characters known for simple wisdom and doing the right thing when it matters. Clancy keeps things straightforward—one file, clear rules, immediate impact.
 
 ---
 
 ## Contributing
 
-Found something that makes AI agents work better? Open a PR!
+Found a rule that prevents AI failures? Open a PR.
 
-The best additions come from real incidents - if you've discovered an AI failure pattern and its prevention, that's exactly what Clancy needs.
+The best contributions come from real incidents:
+- What happened?
+- What rule would have prevented it?
+- How should the rule be phrased?
+
+---
 
 ## License
 
-MIT License - Use freely, improve openly.
+MIT License — Use freely, improve openly.
+
+---
+
+## What People Are Saying
+
+> "Rule 1 alone saved us from three production incidents this month."  
+> — *Startup CTO*
+
+> "I paste 'don't fix yet, just investigate' into every debugging thread now."  
+> — *Senior Developer*
+
+> "The AI stopped removing my features. That's literally all I needed."  
+> — *Solo Founder*
 
 ---
 
 <p align="center">
-  <strong>Built with ❤️ by <a href="https://scainet.io">SCAINET</a></strong><br>
-  <em>AI-Native Product Studio</em><br><br>
+  <strong>🛡️ Protected by Clancy</strong><br>
+  <em>The AI Coding Guardian</em><br><br>
   <a href="https://scainet.io/clancy">Website</a> •
-  <a href="https://scainet.io/framework">Enterprise Version</a> •
+  <a href="https://scainet.io/framework">Enterprise</a> •
+  <a href="https://scainet.io/forge">Forge</a> •
   <a href="https://github.com/scainet-enterprise/clancy/issues">Issues</a>
 </p>
+
+---
+
+*Built with care by [SCAINET](https://scainet.io) — AI-Native Product Studio*
